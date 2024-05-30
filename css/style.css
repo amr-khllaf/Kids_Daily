@@ -140,11 +140,11 @@ header .btn-download:hover {
 /* .my-title p {
   width: 500px;
 } */
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 900px) {
   .my-title p {
     width: 500px;
   }
-}
+} */
 
 .section-one {
   background-color: #f1f1f1;
