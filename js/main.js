@@ -1,7 +1,8 @@
 // To Download PDF File
 function downloadPDF() {
   const link = document.createElement("a");
-  link.href = "C:/Users/CITY_LAP/Desktop/Project/Kids Information.pdf";
+  link.href =
+    "https://github.com/amr-khllaf/Kids_Daily/blob/76332bfd0a7c397c34f80c9280b622a1b8e087e8/Kids%20Information.pdf";
   link.download = "Kids Information.pdf";
   link.target = "_blank";
   link.click();
