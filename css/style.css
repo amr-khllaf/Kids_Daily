@@ -1,0 +1,302 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --main-color: #e65f78;
+  scroll-padding-top: 75px;
+}
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../Images/wallpaperflare.com_wallpaper.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+header h1 {
+  font-size: 65px;
+}
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 40px;
+  }
+}
+header .myp {
+  max-width: 500px;
+}
+header .btn-download {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+header .btn-download:hover {
+  background-color: white;
+  color: #000;
+}
+#animated-word {
+  white-space: pre; /* Preserve whitespace to ensure letters are spaced correctly */
+}
+/* NavBar */
+/* ------------------------------------------------------------- */
+
+.navbar-nav .nav-link.active {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.nav-tabs .nav-link.active {
+  color: #000;
+  font-weight: bold;
+}
+.nav-tabs .nav-link.active:hover {
+  color: #000;
+}
+.navbar-nav .nav-link {
+  color: white;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+.bg-body-tertiary {
+  background-color: transparent !important;
+}
+
+.navbar.scrolled {
+  background-color: rgb(
+    197,
+    192,
+    192
+  ) !important; /* Change this to the desired color when scrolled */
+  color: black; /* Optional: change text color */
+  transition: background-color 0.3s;
+}
+.navbar.scrolled .nav-link {
+  color: black;
+}
+.navbar.scrolled .nav-link.active,
+.navbar.scrolled .nav-link:hover {
+  color: var(--main-color);
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: var(--main-color);
+}
+
+/* -------------------------------------------------------- */
+/* About */
+
+.text-pink {
+  color: var(--main-color);
+}
+/* ---------------------------------------------- */
+/* About Us */
+
+.about .icons ul li {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.about .icons ul li:hover {
+  border: solid 2px var(--main-color);
+}
+.about .icons ul li svg {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.about .icons ul li:hover svg {
+  color: var(--main-color);
+}
+
+@media screen and (max-width: 992px) {
+  .about .right {
+    margin-top: 30px;
+  }
+}
+/* --------------------------------------------------- */
+
+/* Section One */
+
+.my-title p {
+  width: 500px;
+}
+.section-one {
+  background-color: #f1f1f1;
+}
+.section-one a {
+  color: #333;
+  opacity: 0.5;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.section-one a:hover {
+  color: var(--main-color);
+}
+
+/* -------------------------------------------------------- */
+/* Our Clients */
+.client {
+  background-color: #f1f1f1;
+}
+.client img {
+  width: 70px;
+  margin: auto;
+}
+.client .slider-p {
+  width: 500px;
+  margin: auto;
+  font-style: italic;
+  font-size: 15px;
+}
+.carousel-indicators {
+  bottom: -25px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: var(--main-color);
+}
+.carousel-indicators .active {
+  background-color: #e895a4;
+}
+/* --------------------------------------- */
+/* Our Children */
+.nav-tabs {
+  border: none;
+  max-width: 500px;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.nav-tabs .nav-link {
+  color: #333;
+}
+.children .item {
+  position: relative;
+}
+.children .item .overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.children .item:hover .overlay {
+  top: 0;
+}
+.children .item:hover img {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.children .item:hover img {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.children .item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.children .item:hover.item::after {
+  opacity: 0.7;
+}
+
+.nav-tabs .nav-link:hover {
+  border: none;
+  border-color: transparent;
+  color: var(--main-color);
+}
+/* ------------------------------------------------- */
+/* Form */
+
+.contact .first-two input {
+  width: 48%;
+}
+.form-btn {
+  background-color: var(--main-color);
+  color: white;
+}
+.form-control:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 10px var(--main-color);
+}
+.form-button .btn {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
